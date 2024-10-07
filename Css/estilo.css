@@ -1,0 +1,14 @@
+.header-home {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-home img{
+    width: 200px;
+    height: 200px;
+}
+
+.header-home nav{
+    display: ;
+}
