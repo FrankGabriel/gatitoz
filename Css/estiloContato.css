@@ -105,22 +105,35 @@ footer {
     width: 100%;
 }
 
-.social-icons {
+.icones-sociais {
     margin-top: 20px;
 }
 
-.social-icons a {
+.icones-sociais a {
     margin-right: 15px;
     text-decoration: none;
     display: inline-block;
 }
 
-.social-icons img {
+.icones-sociais img {
     width: 40px; 
     height: 40px;
+    border-radius: 40%;
     transition: transform 0.2s ease; 
 }
 
-.social-icons img:hover {
+
+.icones-sociais a:hover {
+    text-decoration: none;
+}
+
+.icones-sociais img:hover {
     transform: scale(1.1); 
+}
+
+#mensagem {
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto; 
+    resize: vertical; 
 }
