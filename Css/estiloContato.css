@@ -5,135 +5,134 @@ html, body {
 
 body {
     display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa; 
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-color: #f8f9fa; /* Cor de fundo suave */
 }
 
 header {
-    background: #343a40; 
+    background: #343a40; /* Cor de fundo do cabeçalho */
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 0; /* Espaçamento interno vertical */
 }
 
 .logo {
-    font-size: 24px;
-    padding-left: 20px;
+    font-size: 24px; /* Tamanho da fonte do logotipo */
+    padding-left: 20px; /* Espaçamento à esquerda */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    padding-right: 20px; /* Espaçamento à direita */
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ease;
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: #ffc107;
-    transform: scale(1.1);
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+    color: #ffc107; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta levemente o tamanho do link */
 }
 
 main {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Permite que o main expanda para preencher o espaço disponível para fazer o rodapé descer até o fim da pagina*/
+    padding: 20px; /* Espaçamento interno */
 }
 
 section {
-    max-width: 600px; 
-    margin: auto;
+    max-width: 600px; /* Largura máxima da seção */
+    margin: auto; /* Centraliza a seção horizontalmente */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Layout das caixas de texto */
+    flex-direction: column; /* Organiza os elementos em coluna */
 }
 
 form label {
-    margin: 10px 0 5px;
+    margin: 10px 0 5px; /* Espaçamento superior e inferior dos rótulos */
 }
 
 form input,
 form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados */
 }
 
 form input:focus,
 form textarea:focus {
-    border-color: #80bdff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, .25);
+    border-color: #80bdff; /* Muda a cor da borda em foco */
+    outline: none; /* Remove a borda padrão de foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, .25); /* Adiciona sombra ao foco */
 }
 
 form input:invalid {
-    border-color: #dc3545;
+    border-color: #dc3545; /* Muda a cor da borda para vermelho em caso de erro */
 }
 
 form button {
-    background: #28a745; 
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: #28a745; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para mão ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Efeito de transição ao mudar a cor */
 }
 
 form button:hover {
-    background: #218838; 
+    background: #218838; /* Cor mais escura ao passar o mouse */
 }
 
 footer {
-    background: #343a40; 
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
+    background: #343a40; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno vertical */
+    width: 100%; /* Largura total */
 }
 
 .icones-sociais {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaçamento superior */
 }
 
 .icones-sociais a {
-    margin-right: 15px;
-    text-decoration: none;
-    display: inline-block;
+    margin-right: 15px; /* Espaçamento a direita entre ícones */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-block; /* Permite espaçamento adequado */
 }
 
 .icones-sociais img {
-    width: 40px; 
-    height: 40px;
-    border-radius: 40%;
-    transition: transform 0.2s ease; 
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    border-radius: 40%; /* Torna os ícones circulares */
+    transition: transform 0.2s ease; /* Efeito de transição ao passar o mouse */
 }
 
-
 .icones-sociais a:hover {
-    text-decoration: none;
+    text-decoration: none; /* Garante que o sublinhado não apareça ao passar o mouse */
 }
 
 .icones-sociais img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
 #mensagem {
-    min-height: 100px;
-    max-height: 300px;
-    overflow-y: auto; 
-    resize: vertical; 
+    min-height: 100px; /* Altura mínima da textarea */
+    max-height: 300px; /* Altura máxima da textarea */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
 }
