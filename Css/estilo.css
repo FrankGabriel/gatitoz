@@ -10,5 +10,76 @@
 }
 
 .header-home nav{
-    display: ;
+    display: flex;
+}
+
+.nav-produtos {
+    display: flex;                  /* Usando flexbox para layout */
+    justify-content: space-between; /* Distribui igualmente */
+    margin: 0 10%;                 /* Margem de 10% nas laterais */
+    padding: 1em 0;                /* Espaçamento vertical opcional */
+}
+
+.nav-item {
+    flex: 1;                       /* Cada item ocupa espaço igual */
+    margin: 0 10px;                /* Margem entre os itens */
+    text-align: center;            /* Centraliza o texto dos links */
+    transition: transform 0.2s;    /* Transição suave para o efeito de aumento */
+}
+
+.nav-item a {
+    font-size: 40px;               /* Tamanho da fonte 40px */
+    text-decoration: none;          /* Remove o sublinhado */
+    color: inherit;                /* Mantém a cor padrão do texto */
+}
+
+.nav-item:hover {
+    transform: scale(1.1);         /* Aumenta ligeiramente o item ao passar o mouse */
+}
+
+
+
+
+.produtos {
+    text-align: center; /* Centraliza o texto */
+
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    border-top: 1px solid gray; /* Linha fina cinza na parte inferior */
+}
+
+.produtos h1 {
+    margin-bottom: 20px; /* Espaço abaixo do h1 */
+    font-size: 45;
+}
+
+.produtos h2 {
+    margin-bottom: 15px; /* Espaço abaixo do h1 */
+    font-size: 30;
+}
+
+.produtos h3 {
+    margin-bottom: 10px; /* Espaço abaixo do h1 */
+    font-size: 20;
+    font-style: normal ;
+    
+}
+
+
+.produtos > div {
+    display: inline-block; /* Permite que as divs fiquem lado a lado */
+    margin: 20px; /* Espaço entre os itens */
+    vertical-align: top; /* Alinha as divs ao topo */
+    border: 1px solid black; /* Borda fina e preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    
+}
+
+.produtos img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 300px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    object-fit: cover; /* Mantém a proporção e cobre o espaço */
 }
