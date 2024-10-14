@@ -1,1 +1,59 @@
-<h1> página Contato</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesContato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Meu Site</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ínicio</a></li>
+                <li><a href="../html/sobre.html">Sobre</a></li>
+            </ul>   
+        </nav>        
+    </header>
+
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="name">Seu nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Informações de Contato</h3>
+            <p>Telefone: (63) 1234-5678</p>
+
+            <div class="social-icons">
+                <a href="https://api.whatsapp.com/send?phone=5563992881078" target="_blank" aria-label="WhatsApp">
+                    <img src="../Imagens/Whatsapp.png" alt="Ícone do WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <img src="../Imagens/Instagram.png" alt="Ícone do Instagram">
+                </a>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ínicio</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
