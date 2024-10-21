@@ -1,41 +1,77 @@
+/* Estilo para o header */
 .header-home {
-    display: flex;
-    align-items: center;
-
+    display: flex; /* Coloca os elementos lado a lado */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    background-color: #1561ad; /* Mesma cor azul do footer */
+    padding: 20px;
 }
 
-.header-home img{
-    width: 200px;
-    height: 200px;
+/* Estilo para o logo e a imagem */
+.header-home figure {
+    margin: 0; /* Remove margens extras */
 }
 
-.header-home nav{
-    display: flex;
+.header-home figure img {
+    max-width: 100px; /* Define o tamanho máximo do logo */
 }
 
+/* Estilo para o título */
+.header-home h1 {
+    margin: 0 20px; /* Espaço ao redor do título */
+    color: white; /* Cor do texto do título */
+    font-size: 24px;
+}
+
+/* Estilo para a navegação */
+.header-home nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 18px;
+}
+
+/* Estilo para hover nos links */
+.header-home nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo geral para a navegação */
 .nav-produtos {
-    display: flex;                  /* Usando flexbox para layout */
-    justify-content: space-between; /* Distribui igualmente */
-    margin: 0 10%;                 /* Margem de 10% nas laterais */
-    padding: 1em 0;                /* Espaçamento vertical opcional */
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: space-around; /* Espaçamento entre os botões */
+    margin: 20px;
 }
 
+/* Estilo para os itens da navegação */
 .nav-item {
-    flex: 1;                       /* Cada item ocupa espaço igual */
-    margin: 0 10px;                /* Margem entre os itens */
-    text-align: center;            /* Centraliza o texto dos links */
-    transition: transform 0.2s;    /* Transição suave para o efeito de aumento */
+    background-color: #f1f1f1;
+    border: 2px solid #ccc; /* Borda ao redor dos botões */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Efeito de sombra 3D */
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
 }
 
+/* Estilo para os links dentro dos botões */
 .nav-item a {
-    font-size: 40px;               /* Tamanho da fonte 40px */
-    text-decoration: none;          /* Remove o sublinhado */
-    color: inherit;                /* Mantém a cor padrão do texto */
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
+/* Efeito de hover (passar o mouse em cima) */
 .nav-item:hover {
-    transform: scale(1.1);         /* Aumenta ligeiramente o item ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+    background-color: #e0e0e0; /* Muda a cor de fundo ao passar o mouse */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 
@@ -82,4 +118,31 @@
     width: 300px; /* Define a largura da imagem */
     height: 300px; /* Define a altura da imagem */
     object-fit: cover; /* Mantém a proporção e cobre o espaço */
+}
+
+footer {
+    display: flex; /* Alinha as divs lado a lado */
+    justify-content: space-around; /* Espaça igualmente as divs */
+    background-color: #0071bc; /* Azul semelhante ao da PETZ */
+    padding: 20px;
+    color: white; /* Cor do texto para contraste */
+}
+
+footer div {
+    flex: 1; /* Faz com que cada div ocupe a mesma largura */
+    text-align: center; /* Centraliza o conteúdo das divs */
+}
+
+footer img {
+    max-width: 100px; /* Ajusta o tamanho máximo das imagens */
+    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+footer a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Efeito de hover nos links */
 }
