@@ -8,11 +8,11 @@ body {
     flex-direction: column; /* Organiza o conteúdo em coluna */
     font-family: Arial, sans-serif; /* Define a fonte do texto */
     line-height: 1.6; /* Define o espaçamento entre linhas */
-    background-color: #f8f9fa; /* Cor de fundo suave */
+    background-color: #f8f9fa; /* Cor suave */
 }
 
 header {
-    background: #343a40; /* Cor de fundo do cabeçalho */
+    background: #343a40; 
     color: #fff;
     padding: 10px 0; /* Espaçamento interno vertical */
 }
@@ -26,7 +26,7 @@ nav ul {
     list-style: none; /* Remove marcadores da lista */
     display: flex; /* Exibe os itens em linha */
     justify-content: flex-end; /* Alinha os itens à direita */
-    padding-right: 20px; /* Espaçamento à direita */
+    padding-right: 20px; /* Espaçamento à direita */ 
 }
 
 nav ul li {
@@ -34,15 +34,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Cor do texto do link */
+    color: #fff; /* Cor do link */
     text-decoration: none; /* Remove sublinhado dos links */
     transition: color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
-    color: #ffc107; /* Muda a cor do texto ao passar o mouse */
-    transform: scale(1.1); /* Aumenta levemente o tamanho do link */
 }
 
 main {
@@ -84,7 +78,7 @@ form input:invalid {
 }
 
 form button {
-    background: #28a745; /* Cor de fundo verde */
+    background: #28a745;
     color: #fff; /* Cor do texto do botão */
     padding: 10px; /* Espaçamento interno */
     border: none; /* Remove borda padrão */
@@ -98,8 +92,8 @@ form button:hover {
 }
 
 footer {
-    background: #343a40; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
+    background: #343a40;
+    color: #fff;
     text-align: center; /* Centraliza o texto */
     padding: 10px 0; /* Espaçamento interno vertical */
     width: 100%; /* Largura total */
@@ -110,7 +104,7 @@ footer {
 }
 
 .icones-sociais a {
-    margin-right: 15px; /* Espaçamento a direita entre ícones */
+    margin-right: 15px; /* Espaçamento a direita entre icones */
     text-decoration: none; /* Remove sublinhado dos links */
     display: inline-block; /* Permite espaçamento adequado */
 }
